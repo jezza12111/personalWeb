@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://jiri-danielka.cz/</title>
+  <link>http://jiri-danielka.cz/</link>
+
+<item>
+     <link>http://jiri-danielka.cz/</link>
+     <title>Jirka Danielka's personal page</title>
+     <description>Jirka Danielka's personal page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://jiri-danielka.cz/index.html</link>
+     <title>Jirka Danielka's personal page</title>
+     <description>Jirka Danielka's personal page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://jiri-danielka.cz/resume.html</link>
+     <title>Jirka Danielka's personal page</title>
+     <description>Jirka Danielka's personal page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://jiri-danielka.cz/contact.html</link>
+     <title>Jirka Danielka's personal page</title>
+     <description>Jirka Danielka's personal page</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
