@@ -8,23 +8,18 @@
 
 
 <url>
-  <loc>http://jiri-danielka.cz/</loc>
-  <lastmod>2018-12-01T20:10:09+00:00</lastmod>
+  <loc>http://jiri-danielka.cz/index.html</loc>
+  <lastmod>2018-12-08T22:49:23+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://jiri-danielka.cz/index.html</loc>
-  <lastmod>2018-12-01T20:10:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>http://jiri-danielka.cz/resume.html</loc>
-  <lastmod>2018-12-01T20:19:43+00:00</lastmod>
+  <lastmod>2018-12-08T22:49:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://jiri-danielka.cz/contact.html</loc>
-  <lastmod>2018-12-01T20:20:37+00:00</lastmod>
+  <loc>http://jiri-danielka.cz/contact.php</loc>
+  <lastmod>2018-12-08T23:42:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

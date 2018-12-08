@@ -20,15 +20,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+    <?php
+    if (isset($_POST["mail-body"])&&isset($_POST["full-name"])&&isset($_POST["email"])&&$_POST["mail-body"]!=""&&$_POST["full-name"]!=""&&$_POST["email"]!="" ) {
+      $msg = $_POST["mail-body"]. ', from: '. $_POST["full-name"].', phone:'.(isset($_POST["phone"])&&$_POST["phone"]!=""?$_POST["phone"]:' without phone');
+      mail("mail@jiri-danielka.cz","Message from".$_POST["email"] ,$msg);
+      echo "";
+    }
+     ?>
     <div class="site-wrap">
-
       <a href="#" class="offcanvas-toggle js-offcanvas-toggle" style="color:white; font-size:1.2em">Menu</a>
       <div class="offcanvas_menu" id="offcanvas_menu">
         <ul class="mb-5">
           <li><a href="index.html">Bio</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li class="active"><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="contact.php">Contact</a></li>
         </ul>
         <ul class="social">
           <li><a href="https://www.linkedin.com/in/jiří-danielka-947393132" class="fa fa-linkedin"></a></li>
@@ -46,26 +51,26 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       <main>
         <a href="index.html" class="home-button"><span class="fa fa-home"></span></a>
         <h1 class="mb-5">Contact Me</h1>
-        <form action="#" method="post">
+        <form action="contact.php" method="post" id="contact-form">
 
           <div class="row mb-4">
             <div class="col-md-12">
-              <input type="text" class="form-control" placeholder="Full Name">
+              <input type="text" class="form-control" placeholder="Full Name - required field" name="full-name">
             </div>
           </div>
           <div class="row mb-4">
             <div class="col-md-12">
-              <input type="text" class="form-control" placeholder="Email Address">
+              <input type="text" class="form-control" placeholder="Email Address  - required field" name="email">
             </div>
           </div>
           <div class="row mb-4">
             <div class="col-md-12">
-              <input type="text" class="form-control" placeholder="Phone">
+              <input type="text" class="form-control" placeholder="Phone" name="phone">
             </div>
           </div>
           <div class="row mb-4">
             <div class="col-md-12">
-              <textarea name="#" id="" class="form-control" placeholder="Write some words of encouragement" cols="30" rows="10"></textarea>
+              <textarea class="form-control" placeholder="Write some words of encouragement  - required field" cols="30" rows="10" name="mail-body" ></textarea>
             </div>
           </div>
           <div class="row">
