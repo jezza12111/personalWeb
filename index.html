@@ -44,7 +44,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       </div>
 
-      <aside style="background-image: url(img/profile_big.jpg);"></aside>
+      <aside id="photo" style="background-image: url(img/profile_big.jpg);"></aside>
       <main>
         <h1 class="mb-0">Hi, I'm Jiří Danielka</h1>
         <div class="mb-5">
@@ -74,6 +74,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    var files = ["profile_big3", "profile_big2", "profile_big","profile_big4", "profile_big5", "profile_big6"];
+    var last = -1;
+    var newImg
+    setInterval(function() {
+        do {
+          newImg = getRandomInt(files.length);
+        } while (last===newImg);
+        last = newImg;
+        $("#photo").stop().animate({opacity: 0},1000,function(){
+            $(this).css('background-image', 'url(img/'+files[newImg]+'.jpg)').animate({opacity: 1},{duration:1000});})
+          }, 7000);
+
+    </script>
 
   </body>
 </html>
