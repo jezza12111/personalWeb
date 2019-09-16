@@ -75,18 +75,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
-    function getRandomInt(max) {
-      return Math.floor(Math.random() * Math.floor(max));
-    }
 
-    var files = ["profile_big3", "profile_big2", "profile_big","profile_big4", "profile_big5", "profile_big6", "profile_big7"];
-    var last = -1;
-    var newImg
+    var files = ["profile_big", "profile_big2", "profile_big3","profile_big4", "profile_big5", "profile_big6", "profile_big7"];
+    var newImg=0;
     setInterval(function() {
-        do {
-          newImg = getRandomInt(files.length);
-        } while (last===newImg);
-        last = newImg;
+      newImg++;
+      if (newImg===files.length) {
+        newImg=0;
+      }
         $("#photo").stop().animate({opacity: 0},1000,function(){
             $(this).css('background-image', 'url(img/'+files[newImg]+'.jpg)').animate({opacity: 1},{duration:1000});})
           }, 7000);
