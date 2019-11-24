@@ -33,6 +33,7 @@
         <ul class="mb-5">
           <li><a href="index.html">Bio</a></li>
           <li><a href="resume.html">Resume</a></li>
+          <li><a href="notes.html">Travel notes</a></li>
           <li class="active"><a href="contact.php">Contact</a></li>
         </ul>
         <ul class="social">
